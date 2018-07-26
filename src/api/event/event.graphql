@@ -1,0 +1,25 @@
+type Event {
+    _id: ID!
+    title: String!
+    createdAt: String
+    category: String
+    description: String
+    # Venue: String
+    hostedBy: String
+    hostPhotoURL: String
+}
+
+input eventInput {
+    title: String!
+    category: String
+    description: String
+    # Venue: String
+    hostedBy: String
+    hostPhotoURL: String
+}
+type Query {
+    getEvents: [Event]!
+}
+type Mutation {
+    createEvent(input: eventInput ): Event
+}

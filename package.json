@@ -1,0 +1,25 @@
+{
+  "name": "event_api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "graphql-yoga": "^1.14.12",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.2.5",
+    "yup": "^0.26.0"
+  },
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js --presets env,stage-2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.18.3"
+  }
+}
